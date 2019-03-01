@@ -24,7 +24,7 @@ All drivers must adhere to this api so that layers build on top it will work as 
 
  - `new_connection(*connection_parameters)` - Returns a new `Connection` object. The connection parameters are driver specific.
 
-   `<connection>` - Callback fired when a connection is successfully made.  Queries can safely be made before this point, but they won't se sent to the database engine yet for obvious reasons.
+   `<connection>` - Callback fired when a connection is successfully made.  Queries can safely be made before this point, but they won't be sent to the database engine yet for obvious reasons.
 
    `<error>(reason)` - Callback fired when something goes wrong in either the connection or any of the sub-methods.
    
